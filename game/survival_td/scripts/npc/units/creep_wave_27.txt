@@ -1,0 +1,23 @@
+// Kobold
+   "creep_wave_27"
+  {
+    "BaseClass"              "npc_dota_creep_lane"
+    "Model"                  "models/items/lone_druid/true_form/wizened_bear/wizened_bear.vmdl"
+    "SoundSet"               "Creep_Bad_Melee"
+    "BountyXP"               "0"     // Experience earn.
+    "BountyGoldMin"          "15"     // Gold earned min.
+    "BountyGoldMax"          "15"     // Gold earned max.
+
+    "ArmorPhysical"          "7"     // Physical protection.
+    "MagicalResistance"      "0"     // Magical protection.
+
+    "BoundsHullName"         "DOTA_HULL_SIZE_SMALL"
+
+    "StatusHealth"           "34260"     // Base health.
+    "StatusHealthRegen"      "0"     // Health regeneration rate.
+
+    "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"     // Type of locomotion - ground, air
+    "MovementSpeed"          "400"   // Speed
+    "MovementTurnRate"       "1.0"   // Turning rate.
+    "FollowRange"            "0"   // Distance to keep when following
+  }

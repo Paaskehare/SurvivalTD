@@ -1,0 +1,23 @@
+// Kobold
+   "creep_wave_16"
+  {
+    "BaseClass"              "npc_dota_creep_lane"
+    "Model"                  "models/creeps/neutral_creeps/n_creep_satyr_c/n_creep_satyr_c.vmdl"
+    "SoundSet"               "Creep_Bad_Melee"
+    "BountyXP"               "0"     // Experience earn.
+    "BountyGoldMin"          "7"     // Gold earned min.
+    "BountyGoldMax"          "7"     // Gold earned max.
+
+    "ArmorPhysical"          "4"     // Physical protection.
+    "MagicalResistance"      "0"     // Magical protection.
+
+    "BoundsHullName"         "DOTA_HULL_SIZE_SMALL"
+
+    "StatusHealth"           "9450"     // Base health.
+    "StatusHealthRegen"      "0"     // Health regeneration rate.
+
+    "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"     // Type of locomotion - ground, air
+    "MovementSpeed"          "450"   // Speed
+    "MovementTurnRate"       "1.0"   // Turning rate.
+    "FollowRange"            "0"   // Distance to keep when following
+  }

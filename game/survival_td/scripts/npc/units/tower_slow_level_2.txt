@@ -1,0 +1,89 @@
+//=================================================================
+  // Tower: Slow Tower Level 2
+  //=================================================================
+  "tower_slow_level_2"
+  {
+    "BaseClass"                     "npc_dota_creature"
+    "Model"                         "models/heroes/huskar/huskar.vmdl"
+    "ModelScale"                    "0.80"
+    "Level"                         "3" // Level 3 for  the "auto level up" to kick in, because it has 3 abilities in total
+    "HealthBarOffset"               "140"
+    "HasInventory"                  "0"
+    "AbilityLayout"                 "2"
+    "Ability1"                      "sell_tower"
+    "Ability2"                      "slow_poison"
+    "Ability3"                      ""
+    "Ability4"                      ""
+    "SoundSet"                      "Hero_Huskar"
+    "GameSoundsFile"                "soundevents/game_sounds_heroes/game_sounds_huskar.vsndevts"
+
+    "GoldCost"                      "25"
+    "BuildTime"                     "1"
+    "Portrait"                      "npc_dota_hero_huskar"
+    "RequiresLevel"                 "2"
+    "IsUpgrade"                     "1"
+
+    "AttackCapabilities"            "DOTA_UNIT_CAP_RANGED_ATTACK"
+    "AttackDamageType"              "DAMAGE_TYPE_ArmorPhysical"
+    "AttackDamageMin"               "140"
+    "AttackDamageMax"               "145"
+    "AttackRate"                    "0.75"
+    "AttackAnimationPoint"          "0.75"
+    "AttackAcquisitionRange"        "1500"
+    "AttackRange"                   "1500"
+    "ProjectileModel"               "particles/units/heroes/hero_huskar/huskar_base_attack.vpcf"
+    "ProjectileSpeed"               "2000"
+
+    "BountyGoldMin"                 "0.0"
+    "BountyGoldMax"                 "0.0"
+
+    "BoundsHullName"                "DOTA_HULL_SIZE_SMALL"
+    "RingRadius"                    "100"
+    "HealthBarOffset"               "260"
+
+    "MovementCapabilities"          "DOTA_UNIT_CAP_MOVE_NONE"
+    "MovementSpeed"                 "0"         // Speed
+    "MovementTurnRate"              "1.0"       // Turning rate.
+    "StatusHealth"                  "100"       // Base health.
+    "StatusHealthRegen"             "0"         // Health regeneration rate.
+    "StatusMana"                    "0"         // Base mana.
+    "StatusManaRegen"               "0"         // Mana regeneration rate.
+
+
+    "VisionDaytimeRange"            "1000"      // Range of vision during day light.
+    "VisionNighttimeRange"          "1000"      // Range of vision at night time.
+
+    "CombatClassAttack"             "DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+    "CombatClassDefend"             "DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
+    "UnitRelationshipClass"         "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+    "AttributePrimary"              "DOTA_ATTRIBUTE_STRENGTH"
+    "AttributeBaseStrength"         "0"            // Base strength
+    "AttributeStrengthGain"         "0"            // Strength bonus per level.
+    "AttributeBaseAgility"          "0"            // Base agility
+    "AttributeAgilityGain"          "0"            // Agility bonus per level.
+    "AttributeBaseIntelligence"     "0"            // Base intelligence
+    "AttributeIntelligenceGain"     "0"            // Intelligence bonus per level.
+
+    "SelectOnSpawn"                 "0"
+    "IgnoreAddSummonedToSelection"  "1"
+   
+    // Creature Data
+    //----------------------------------------------------------------
+    "Creature"
+    {
+            "IsNeutralUnitType"             "0"
+            "CanBeDominated"                "0"
+            "AutoAttacksByDefault"          "1"
+            "CanRespawn"                    "0"
+            "DisableClumpingBehavior"       "1"
+            "AttachWearables"
+            {
+                    "Wearable1" { "ItemDef" "268" }
+                    "Wearable2" { "ItemDef" "269" }
+                    "Wearable3" { "ItemDef" "270" }
+                    "Wearable4" { "ItemDef" "271" }
+                    "Wearable5" { "ItemDef" "272" }
+            }
+    }
+  }

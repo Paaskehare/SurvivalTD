@@ -1,0 +1,89 @@
+//=================================================================
+  // Tower: Deranged Tower
+  //=================================================================
+  "tower_deranged"
+  {
+    "BaseClass"                     "npc_dota_creature"
+    "Model"                         "models/heroes/troll_warlord/troll_warlord.vmdl"
+    "ModelScale"                    "1.0"
+    "Level"                         "2"
+    "HealthBarOffset"               "140"
+    "HasInventory"                  "0"
+    "AbilityLayout"                 "4"
+    "Ability1"                      "sell_tower"
+    "Ability2"                      "tower_deranged_splash_attack"
+    "Ability3"                      ""
+    "Ability4"                      ""
+    "SoundSet"                      "Hero_Troll"
+    "GameSoundsFile"                "soundevents/game_sounds_heroes/game_sounds_troll_warlord.vsndevts"
+
+    "GoldCost"                      "300"
+    "BuildTime"                     "15"
+    "Portrait"                      "npc_dota_hero_troll_warlord"
+    "RequiresLevel"                 "3"
+    "Hotkey"                        "G"
+    "AttacksEnabled"                "ground"
+
+    "AttackCapabilities"            "DOTA_UNIT_CAP_RANGED_ATTACK"
+    "AttackDamageType"              "DAMAGE_TYPE_ArmorPhysical"
+    "AttackDamageMin"               "450"
+    "AttackDamageMax"               "900"
+    "AttackRate"                    "0.20"
+    "AttackAnimationPoint"          "0.10"
+    "AttackAcquisitionRange"        "900"
+    "AttackRange"                   "900"
+    "ProjectileModel"               "particles/units/heroes/hero_troll_warlord/troll_warlord_base_attack.vpcf"
+    "ProjectileSpeed"               "2000"
+
+    "BountyGoldMin"                 "0.0"
+    "BountyGoldMax"                 "0.0"
+
+    "BoundsHullName"                "DOTA_HULL_SIZE_SMALL"
+    "RingRadius"                    "100"
+    "HealthBarOffset"               "260"
+
+    "MovementCapabilities"          "DOTA_UNIT_CAP_MOVE_NONE"
+    "MovementSpeed"                 "0"         // Speed
+    "MovementTurnRate"              "1.0"           // Turning rate.
+    "StatusHealth"                  "100"      // Base health.
+    "StatusHealthRegen"             "0"         // Health regeneration rate.
+    "StatusMana"                    "0"         // Base mana.
+    "StatusManaRegen"               "0"         // Mana regeneration rate.
+
+    "VisionDaytimeRange"            "1000"      // Range of vision during day light.
+    "VisionNighttimeRange"          "1000"      // Range of vision at night time.
+
+    "CombatClassAttack"             "DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+    "CombatClassDefend"             "DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
+    "UnitRelationshipClass"         "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+    "AttributePrimary"              "DOTA_ATTRIBUTE_STRENGTH"
+    "AttributeBaseStrength"         "0"            // Base strength
+    "AttributeStrengthGain"         "0"            // Strength bonus per level.
+    "AttributeBaseAgility"          "0"            // Base agility
+    "AttributeAgilityGain"          "0"            // Agility bonus per level.
+    "AttributeBaseIntelligence"     "0"            // Base intelligence
+    "AttributeIntelligenceGain"     "0"            // Intelligence bonus per level.
+
+    "SelectOnSpawn"                 "0"
+    "IgnoreAddSummonedToSelection"  "1"
+   
+    // Creature Data
+    //----------------------------------------------------------------
+    "Creature"
+    {
+            "IsNeutralUnitType"             "0"
+            "CanBeDominated"                "0"
+            "AutoAttacksByDefault"          "1"
+            "CanRespawn"                    "0"
+            "DisableClumpingBehavior"       "1"
+            "AttachWearables"
+            {
+                    "Wearable1" { "ItemDef" "373" } // Weapon
+                    "Wearable2" { "ItemDef" "374" } // Off-hand Weapon
+                    "Wearable3" { "ItemDef" "410" } // Shoulders
+                    "Wearable4" { "ItemDef" "411" } // Head
+                    "Wearable5" { "ItemDef" "412" } // Arms
+            }
+    }
+  }

@@ -1,0 +1,80 @@
+.CustomNotifications {
+    height: 100%;
+    width: 100%;
+}
+
+#BottomNotifications
+{
+    flow-children: down;
+    horizontal-align: center;
+    vertical-align: bottom;
+    width: 100%;
+    opacity: 1;
+    margin-bottom: 275px;
+    visibility: visible;
+}
+
+#TopNotifications
+{
+    flow-children: down;
+    horizontal-align: center;
+    vertical-align: top;
+    width: 100%;
+    opacity: 1;
+    margin-top: 275px;
+    visibility: visible;
+}
+
+#BottomNotifications .NotificationMessage,
+#TopNotifications .NotificationMessage
+{
+    font-family: Radiance,FZLanTingHei-R-GBK,TH Sarabun New,Gulim,MingLiU;
+    color: #cd140d;
+    vertical-align: center;
+    horizontal-align: center;
+    text-shadow: 4px 4px 4px #121212;
+    font-size: 36px;
+    text-align: center; 
+    animation-name: scalein;
+    animation-duration: 0.25s;
+    animation-timing-function: linear;
+}
+
+#TopNotifications .NotificationMessage {
+    color: white;
+}
+
+#LeftNotifications
+{
+    flow-children: down;
+    horizontal-align: left;
+    vertical-align: top;
+    margin-top: 400px;
+    visibility: visible;
+    margin-left: 50px;
+    opacity: 1;
+}
+
+#LeftNotifications .NotificationMessage
+{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@keyframes 'scalein' {
+  0% {
+    opacity:0;
+    transform: scaleX(1) scaleY(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scaleX(1.5) scaleY(1.5);
+  }
+
+  100% {
+    transform: scaleX(1) scaleY(1);
+  }
+}

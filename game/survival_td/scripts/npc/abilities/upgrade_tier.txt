@@ -1,0 +1,26 @@
+"upgrade_tier"
+  {
+    "BaseClass"               "ability_lua"
+    "ScriptFile"              "abilities/upgrade_tier"
+    "AbilityName"             "Upgrade_Tier"
+    "AbilityTextureName"      "omniknight_purification"
+    "MaxLevel"                "4"
+
+    "AbilityBehavior"         "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+    "AbilityCastPoint"        "0.0"
+    "AbilityCooldown"         "0.0"
+    "AbilityCastRange"        "400"
+
+    "AbilityManaCost"         "0"
+
+    "AbilityGoldCost"         "40 80 120 0"
+
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"        "FIELD_FLOAT"
+        "experience"      "100.0"
+      }
+    }
+  }

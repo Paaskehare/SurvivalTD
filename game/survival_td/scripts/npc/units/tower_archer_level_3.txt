@@ -1,0 +1,90 @@
+//=================================================================
+  // Tower: Archer Tower Level 3
+  //=================================================================
+  "tower_archer_level_3"
+  {
+    "BaseClass"                     "npc_dota_creature"
+    "Model"                         "models/heroes/drow/drow.vmdl"
+    "ModelScale"                    "1.4"
+    "Level"                         "2"
+    "HealthBarOffset"               "140"
+    "HasInventory"                  "0"
+    "AbilityLayout"                 "4"
+    "Ability1"                      "sell_tower"
+    "Ability2"                      ""
+    "Ability3"                      ""
+    "Ability4"                      ""
+    "SoundSet"                      "Hero_Drow"
+    "GameSoundsFile"                "soundevents/game_sounds_heroes/game_sounds_drowranger.vsndevts"
+
+    "GoldCost"                      "100"
+    "BuildTime"                     "5"
+    "Portrait"                      "npc_dota_hero_drow_ranger"
+    "RequiresLevel"                 "3"
+    "IsUpgrade"                     "1"
+
+    "AttackCapabilities"            "DOTA_UNIT_CAP_RANGED_ATTACK"
+    "AttackDamageType"              "DAMAGE_TYPE_ArmorPhysical"
+    "AttackDamageMin"               "500"
+    "AttackDamageMax"               "600"
+    "AttackRate"                    "0.60"
+    "AttackAnimationPoint"          "0.50"
+    "AttackAcquisitionRange"        "1500"
+    "AttackRange"                   "1500"
+    "ProjectileModel"               "particles/units/heroes/hero_drow/drow_base_attack.vpcf"
+    "ProjectileSpeed"               "2200"
+
+    "BountyGoldMin"                 "0.0"
+    "BountyGoldMax"                 "0.0"
+
+    "BoundsHullName"                "DOTA_HULL_SIZE_SMALL"
+    "RingRadius"                    "100"
+    "HealthBarOffset"               "260"
+
+    "MovementCapabilities"          "DOTA_UNIT_CAP_MOVE_NONE"
+    "MovementSpeed"                 "0"         // Speed
+    "MovementTurnRate"              "1.0"       // Turning rate.
+    "StatusHealth"                  "100"       // Base health.
+    "StatusHealthRegen"             "0"         // Health regeneration rate.
+    "StatusMana"                    "0"         // Base mana.
+    "StatusManaRegen"               "0"         // Mana regeneration rate.
+
+    "VisionDaytimeRange"            "1000"      // Range of vision during day light.
+    "VisionNighttimeRange"          "1000"      // Range of vision at night time.
+
+    "CombatClassAttack"             "DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+    "CombatClassDefend"             "DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
+    "UnitRelationshipClass"         "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+    "AttributePrimary"              "DOTA_ATTRIBUTE_STRENGTH"
+    "AttributeBaseStrength"         "0"            // Base strength
+    "AttributeStrengthGain"         "0"            // Strength bonus per level.
+    "AttributeBaseAgility"          "0"            // Base agility
+    "AttributeAgilityGain"          "0"            // Agility bonus per level.
+    "AttributeBaseIntelligence"     "0"            // Base intelligence
+    "AttributeIntelligenceGain"     "0"            // Intelligence bonus per level.
+
+    "SelectOnSpawn"                 "0"
+    "IgnoreAddSummonedToSelection"  "1"
+   
+    // Creature Data 
+    //----------------------------------------------------------------
+    "Creature"
+    {
+            "IsNeutralUnitType"             "0"
+            "CanBeDominated"                "0"
+            "AutoAttacksByDefault"          "1"
+            "CanRespawn"                    "0"
+            "DisableClumpingBehavior"       "1"
+            "AttachWearables"
+            {
+                    "Wearable1" { "ItemDef" "75" }
+                    "Wearable2" { "ItemDef" "5200" } // Cape
+                    "Wearable3" { "ItemDef" "5196" } // Bow 
+                    "Wearable4" { "ItemDef" "6555" } // leggings
+                    "Wearable5" { "ItemDef" "79" }
+                    "Wearable6" { "ItemDef" "80" }
+                    "Wearable7" { "ItemDef" "5197" } // Cowl
+            }
+    }
+  }

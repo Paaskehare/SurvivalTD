@@ -1,0 +1,81 @@
+"nova_critical_strike"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"				"ability_datadriven"
+	"MaxLevel"				"1"
+	"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"AbilityTextureName"	"giant_wolf_critical_strike"
+
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"crit_chance"				"20"
+		}
+		"02"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"crit_mult"					"200"
+		}
+	}
+
+	"Modifiers"
+	{
+		"modifier_nova_critical_strike_datadriven"
+		{
+		    "Passive"   "1"
+		    "IsHidden"  "1"
+
+		    "OnAttackStart"
+		    {
+		        "RemoveModifier"
+		        {
+		            "ModifierName" 	"modifier_nova_critical_strike_crit_datadriven"
+		            "Target" 		"CASTER"
+		        }
+
+		        "Random"
+		        {
+		            "Chance" 	"%crit_chance"
+		            "OnSuccess"
+		            {
+				        "FireEffect"
+				        {
+				       		"EffectName" 		"particles/units/heroes/hero_chaos_knight/chaos_knight_weapon_blur_critical.vpcf"
+				            "EffectAttachType"  "attach_attack1"
+				            "Target"    		"CASTER"
+				        }
+
+		                "ApplyModifier"
+		                {
+		                    "ModifierName" 	"modifier_nova_critical_strike_crit_datadriven"
+		                    "Target"    	"CASTER"    
+		                }        
+		            }
+		        }
+		    }
+		}
+
+		"modifier_nova_critical_strike_crit_datadriven"
+		{
+		    "IsHidden"  "1"
+		    "Properties"
+		    {
+		        "MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE" "%crit_mult"
+		    }
+
+		    "OnAttackLanded"
+		    {
+		        "RemoveModifier"
+		        {
+		            "ModifierName"  "modifier_nova_critical_strike_crit_datadriven"
+		            "Target"   		"CASTER"    
+		        }
+		    }
+		}
+	}
+}

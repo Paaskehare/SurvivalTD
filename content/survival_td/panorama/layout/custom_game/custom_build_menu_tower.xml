@@ -1,0 +1,18 @@
+<root>
+  <styles>
+    <include src="file://{resources}/styles/custom_game/custom_build_menu.css" />
+  </styles>
+  <scripts>
+    <include src="file://{resources}/scripts/custom_game/custom_extensions.js" />
+    <include src="file://{resources}/scripts/custom_game/custom_build_menu_tower.js" />
+  </scripts>
+  <Panel class="GridTower">
+    <Button id="TowerButton" class="button" onmouseover="TowerShowTooltip()" onmouseout="TowerHideTooltip()" onactivate="TowerBuild()">
+      <DOTAHeroImage id="TowerImage" class="icon" heroimagestyle="landscape" />
+      <Panel id="TowerHotkey">
+        <Label id="TowerHotkeyText" text="S" />
+      </Panel>
+      <Label id="TowerCost" />
+    </Button>
+  </Panel>
+</root>

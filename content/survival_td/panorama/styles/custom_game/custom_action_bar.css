@@ -1,0 +1,227 @@
+@define backgroundColor: #292e2e;
+@define backgroundGradient: gradient( linear, 0% 0%, 0% 100%, from( #292e2e ), to( #191e1e ) );
+
+.ActionBar {
+  width: 100%;
+  height: 300px;
+  vertical-align: bottom;
+  flow-children: right;
+}
+
+#ActionBarContainer {
+  width: 1630px;
+  height: 180px;
+  vertical-align: bottom;
+  flow-children: right;
+  background-color: backgroundColor;
+  background-color: backgroundGradient;
+}
+
+.ActionBar #ActionMinimap {
+  width: 289px;
+  border: 10px solid #222;
+  height: 289px;
+  vertical-align: bottom;
+  overflow: clip;
+}
+
+.AspectRatio4x3 .ActionBar #ActionMinimap,
+.AspectRatio5x4 .ActionBar #ActionMinimap {
+  width: 270px;
+  height: 270px;
+}
+
+.ActionBar #UnitPortrait {
+  width: 15%;
+  height: 100%;
+  overflow: clip;
+  padding: 5px;
+  flow-children: down;
+  border-right: 1px solid #111;
+}
+
+.ActionBar #UnitPortrait #UnitPortraitImage {
+  margin-top: 10px;
+  width: 85%;
+  horizontal-align: center;
+  height: width-percentage(56.25%);
+  saturation: 0.4;
+  border-radius: 4px;
+  box-shadow: 0 0 20px black;
+}
+
+.ActionBar #UnitPortrait #UnitPortraitLabel {
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  background-color: #222;
+  overflow: clip;
+  line-height: 30px;
+  height: 30px;
+}
+
+.ActionBar #UnitInfo {
+  width: 35%;
+  height: 100%;
+  overflow: clip;
+  flow-children: right-wrap;
+}
+
+.ActionBar #GameInfo {
+  border-left: 1px solid #111;
+  width: 15%;
+  height: 100%;
+  overflow: clip;
+  flow-children: down;
+}
+
+#GameInfo .StatusRow {
+  margin-top: 8px;
+  padding: 5px 10px 5px 10px;
+  width: 100%;
+  flow-children: right;
+  text-align: center;
+  vertical-align: middle;
+  height: 36px;
+}
+
+#GameInfo .StatusRow Label.Description {
+  margin-left: 8px;
+}
+
+#GameInfo .StatusRow Image,
+#GameInfo .StatusRow Label {
+  horizontal-align: right;
+}
+
+#GameInfo #GoldBar #PlayerGold {
+  color: white;
+}
+
+.ActionBar #BuildMenu {
+  border-left: 1px solid #111;
+  width: 35%;
+  overflow: clip;
+  background-color: backgroundColor;
+  background-color: backgroundGradient;
+}
+
+.ActionBar #UnitInfo .UnitInfoContainer { 
+  width: 100%; 
+  height: 100%;
+  padding: 5px 10px 5px 10px;
+}
+
+.ActionBar #BuildMenu {
+  width: 35%;
+  height: 100%;
+  overflow: clip;
+  horizontal-align: right;
+}
+
+.UnitInfoContainer #UnitHealthBar {
+  width: 100%;
+  height: 30px;
+
+  background-color: #454545;
+  background-color: gradient( linear, 0% 0%, 0% 100%, from( #454545 ), to( #363636 ) );
+
+  horizontal-align: center; 
+  box-shadow: 4px 4px 0 #222;
+}
+
+.UnitInfoContainer #UnitHealthBarPercentage {
+  height: 100%;
+  background-color: #ade55c;
+  background-color: gradient( linear, 0% 0%, 0% 100%, from( #ade55c ), to( #98c952 ) );
+}
+
+.UnitInfoContainer #UnitHealthBarPercentage.unfriendly {
+  background-color: #ade55c;
+  background-color: gradient( linear, 0% 0%, 0% 100%, from( #f14f4f ), to( #be3c3c ) );
+}
+
+.UnitInfoContainer #UnitHealthBarLabel {
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0px 2px 2px black;
+  font-size: 18px;
+}
+
+#UnitAttributes {
+  margin-top: 36px;
+  width: 100%;
+  height: 66px;
+}
+
+#UnitAttributesProperties {
+  width: 100%;
+  height: 100%;
+}
+
+#UnitAttributesLeft,
+#UnitAttributesRight {
+  width: 50%;
+  flow-children: down;
+}
+
+#UnitAttributesRight {
+  horizontal-align: right;
+}
+
+#UnitAttributesLeft .UnitAttributeProperty {
+  padding-right: 10px;
+}
+
+#UnitAttributesRight .UnitAttributeProperty {
+  padding-left: 10px;
+}
+
+#UnitAttributesProperties .UnitAttributeProperty {
+  width: 100%;
+  padding-bottom: 10px;
+  flow-children: right-wrap;
+}
+
+#UnitAttributesProperties .UnitAttributeProperty.right {
+  /*padding-left: 50px;*/
+}
+
+#UnitAttributesProperties .UnitAttributeProperty .UnitAttributeLabel {
+  color: #606565;
+}
+
+#UnitAttributesProperties .UnitAttributeProperty .UnitAttributeValue {
+  color: white;
+  horizontal-align: right;
+  font-weight: bold;
+}
+
+#UnitAbilities {
+  width: 100%;
+  height: 75px;
+  vertical-align: bottom;
+}
+
+.UnitPortraitContainer {
+  width: 70px;
+  height: 40px;
+  background-color: black;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.UnitPortraitContainer #UnitPortraitButton {
+  width: 100%;
+  height: 100%;
+}
+
+.UnitPortraitContainer #UnitPortraitImage {
+  width: 100%;
+  height: 100%;
+}

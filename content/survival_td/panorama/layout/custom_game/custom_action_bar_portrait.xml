@@ -1,0 +1,17 @@
+<root>
+	<styles>
+		<include src="file://{resources}/styles/custom_game/custom_action_bar.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/scripts/custom_game/custom_extensions.js" />
+		<include src="file://{resources}/scripts/custom_game/custom_action_bar_portrait.js" />
+	</scripts>
+	<Panel class="UnitPortraitContainer">
+		<Button id="UnitPortraitButton" onactivate="SelectUnit()">
+			<Panel id="UnitHealthBar">
+				<Panel id="UnitHealthBarPercentage"/>
+			</Panel>
+			<Image id="UnitPortraitImage" />
+		</Button>
+	</Panel>
+</root>

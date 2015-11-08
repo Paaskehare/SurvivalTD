@@ -1,0 +1,9 @@
+<root>
+	<styles>
+		<include src="file://{resources}/styles/custom_game/custom_cursor_action.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/scripts/custom_game/custom_cursor_action.js" />
+	</scripts>
+	<Panel class="CursorBuildContainer" hittest="false" onmouseactivate="LeftMouseClicked()" oncontextmenu="RightMouseClicked()" oncancel="ESCPressed()"></Panel> 
+</root>

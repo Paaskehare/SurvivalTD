@@ -1,0 +1,90 @@
+//=================================================================
+  // Tower: Implosion Tower
+  // Todo: add splash damage:
+  // radius: full: 300, medium: 400, small: 500
+  // damage: full: 100%, medium: 50%, small: 10%
+  //=================================================================
+  "tower_boulder_level_2"
+  {
+    "BaseClass"                     "npc_dota_creature"
+    "Model"                         "models/heroes/tiny_02/tiny_02.vmdl"
+    "ModelScale"                    "0.80"
+    "Level"                         "3" // Level 3 for  the "auto level up" to kick in, because it has 3 abilities in total
+    "HealthBarOffset"               "140"
+    "HasInventory"                  "0"
+    "AbilityLayout"                 "2"
+    "Ability1"                      "sell_tower"
+    "Ability2"                      "tower_boulder_attack"
+    "Ability3"                      ""
+    "Ability4"                      ""
+    "SoundSet"                      "Hero_Tiny"
+    "GameSoundsFile"                "soundevents/game_sounds_heroes/game_sounds_tiny.vsndevts"
+
+    "GoldCost"                      "400"
+    "BuildTime"                     "5"
+    "Portrait"                      "npc_dota_hero_tiny"
+    "RequiresLevel"                 "3"
+    "AttacksEnabled"                "ground"
+
+    "AttackCapabilities"            "DOTA_UNIT_CAP_RANGED_ATTACK"
+    "AttackDamageType"              "DAMAGE_TYPE_ArmorPhysical"
+    "AttackDamageMin"               "1000"
+    "AttackDamageMax"               "3500"
+    "AttackRate"                    "3.0" // 1.75
+    "AttackAnimationPoint"          "0.1"
+    "AttackAcquisitionRange"        "3500"
+    "AttackRange"                   "3200"
+    "ProjectileModel"               "particles/neutral_fx/mud_golem_hurl_boulder.vpcf"
+    "ProjectileSpeed"               "1200"
+
+    "BountyGoldMin"                 "0.0"
+    "BountyGoldMax"                 "0.0"
+
+    "BoundsHullName"                "DOTA_HULL_SIZE_SMALL"
+    "RingRadius"                    "100"
+    "HealthBarOffset"               "260"
+
+    "MovementCapabilities"          "DOTA_UNIT_CAP_MOVE_NONE"
+    "MovementSpeed"                 "0"         // Speed
+    "MovementTurnRate"              "0.0"           // Turning rate.
+    "StatusHealth"                  "100"      // Base health.
+    "StatusHealthRegen"             "0"         // Health regeneration rate.
+    "StatusMana"                    "0"         // Base mana.
+    "StatusManaRegen"               "0"         // Mana regeneration rate.
+
+    "VisionDaytimeRange"            "1000"      // Range of vision during day light.
+    "VisionNighttimeRange"          "1000"      // Range of vision at night time.
+
+    "CombatClassAttack"             "DOTA_COMBAT_CLASS_ATTACK_SIEGE"
+    "CombatClassDefend"             "DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
+    "UnitRelationshipClass"         "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+    "AttributePrimary"              "DOTA_ATTRIBUTE_STRENGTH"
+    "AttributeBaseStrength"         "0"            // Base strength
+    "AttributeStrengthGain"         "0"            // Strength bonus per level.
+    "AttributeBaseAgility"          "0"            // Base agility
+    "AttributeAgilityGain"          "0"            // Agility bonus per level.
+    "AttributeBaseIntelligence"     "0"            // Base intelligence
+    "AttributeIntelligenceGain"     "0"            // Intelligence bonus per level.
+
+    "SelectOnSpawn"                 "0"
+    "IgnoreAddSummonedToSelection"  "1"
+   
+    // Creature Data
+    //----------------------------------------------------------------
+    "Creature"
+    {
+            "IsNeutralUnitType"             "0"
+            "CanBeDominated"                "0"
+            "AutoAttacksByDefault"          "1"
+            "CanRespawn"                    "0"
+            "DisableClumpingBehavior"       "1"
+            "AttachWearables"
+            {
+                    "Wearable1" { "ItemDef" "493" } // Head
+                    "Wearable2" { "ItemDef" "494" } // Body
+                    "Wearable3" { "ItemDef" "495" } // Left arm
+                    "Wearable4" { "ItemDef" "496" } // Right arm
+            }
+    }
+  }

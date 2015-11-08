@@ -1,0 +1,17 @@
+<root>
+  <styles>
+    <include src="s2r://panorama/styles/dotastyles.vcss_c" />
+    <include src="file://{resources}/styles/custom_game/custom_build_menu.css" />
+  </styles>
+  <scripts>
+    <include src="file://{resources}/scripts/custom_game/custom_gamestate.js" /> 
+    <include src="file://{resources}/scripts/custom_game/custom_build_menu.js" /> 
+  </scripts>
+  <Panel class="BuildMenuContainer">
+    <Panel class="BuildMenu"> 
+      <!--<Image src="file://{resources}/images/custom_game/towers/default.png" />-->
+      <Panel id="BuildMenuGrid">
+      </Panel>
+    </Panel>
+  </Panel>
+</root>

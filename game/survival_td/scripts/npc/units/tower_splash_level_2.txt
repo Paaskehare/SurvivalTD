@@ -1,0 +1,69 @@
+//=================================================================
+  // Tower: Splash Tower Level 2
+  //=================================================================
+  "tower_splash_level_2"
+  {
+    "BaseClass"                     "npc_dota_building"
+    "Model"                         "models/props_structures/tower_bad.vmdl"
+    "ModelScale"                    "0.70"
+    "Level"                         "3" // Level 3 for  the "auto level up" to kick in, because it has 3 abilities in total
+    "HealthBarOffset"               "140"
+    "HasInventory"                  "0"
+    "AbilityLayout"                 "4"
+    "Ability1"                      "sell_tower"
+    "Ability2"                      "tower_splash_attack"
+    "Ability3"                      ""
+    "Ability4"                      ""
+    "SoundSet"                      "Hero_DragonKnight.ElderDragonShoot2"
+    "GameSoundsFile"                "soundevents/game_sounds_heroes/game_sounds_dragon_knight.vsndevts"
+
+    "GoldCost"                      "100"
+    "BuildTime"                     "3"
+    "RequiresLevel"                 "3"
+    "IsUpgrade"                     "1"
+    "AttacksEnabled"                "ground"
+
+    "AttackCapabilities"            "DOTA_UNIT_CAP_RANGED_ATTACK"
+    "AttackDamageType"              "DAMAGE_TYPE_ArmorPhysical"
+    "AttackDamageMin"               "500"
+    "AttackDamageMax"               "560"
+    "AttackRate"                    "1.00"
+    "AttackAnimationPoint"          "0.50"
+    "AttackAcquisitionRange"        "1100"
+    "AttackRange"                   "1100"
+    "ProjectileModel"               "particles/units/heroes/hero_dragon_knight/dragon_knight_elder_dragon_fire.vpcf"
+    "ProjectileSpeed"               "1400"
+
+    "BountyGoldMin"                 "0.0"
+    "BountyGoldMax"                 "0.0"
+
+    "BoundsHullName"                "DOTA_HULL_SIZE_SMALL"
+    "RingRadius"                    "100"
+    "HealthBarOffset"               "260"
+
+    "MovementCapabilities"          "DOTA_UNIT_CAP_MOVE_NONE"
+    "MovementSpeed"                 "0"         // Speed
+    "MovementTurnRate"              "0.0"           // Turning rate.
+    "StatusHealth"                  "100"      // Base health.
+    "StatusHealthRegen"             "0"         // Health regeneration rate.
+    "StatusMana"                    "0"         // Base mana.
+    "StatusManaRegen"               "0"         // Mana regeneration rate.
+
+    "VisionDaytimeRange"            "1000"      // Range of vision during day light.
+    "VisionNighttimeRange"          "1000"      // Range of vision at night time.
+
+    "CombatClassAttack"             "DOTA_COMBAT_CLASS_ATTACK_LIGHT"
+    "CombatClassDefend"             "DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
+    "UnitRelationshipClass"         "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+    "AttributePrimary"              "DOTA_ATTRIBUTE_STRENGTH"
+    "AttributeBaseStrength"         "0"            // Base strength
+    "AttributeStrengthGain"         "0"            // Strength bonus per level.
+    "AttributeBaseAgility"          "0"            // Base agility
+    "AttributeAgilityGain"          "0"            // Agility bonus per level.
+    "AttributeBaseIntelligence"     "0"            // Base intelligence
+    "AttributeIntelligenceGain"     "0"            // Intelligence bonus per level.
+
+    "SelectOnSpawn"                 "0"
+    "IgnoreAddSummonedToSelection"  "1"
+  }

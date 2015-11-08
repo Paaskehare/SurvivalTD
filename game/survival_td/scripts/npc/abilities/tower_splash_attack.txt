@@ -1,0 +1,91 @@
+//=================================================================
+  // Torch Tower: Splash Attack
+  //=================================================================
+  "tower_splash_attack"
+  {
+    "BaseClass"               "ability_datadriven"
+    "AbilityName"             "Splash Damage"
+    "MaxLevel"                "2"
+
+    "AbilityBehavior"         "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityUnitDamageType"   "DAMAGE_TYPE_PHYSICAL"
+    "AbilityUnitTargetTeam"   "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityTextureName"      "black_dragon_splash_attack"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "01" // AOE with full damage
+      {
+        "var_type"        "FIELD_FLOAT"
+        "radius_full"     "150 200" // 200 for upgrade
+      }
+      "02" // AOE with medium damage
+      {
+        "var_type"        "FIELD_FLOAT"
+        "radius_medium"   "300 400" // 400 for upgrade
+      }
+      "03"
+      {
+        "var_type"        "FIELD_FLOAT"
+        "splash_damage_percent"  "40 50"
+      }
+    }
+
+    "Modifiers"
+    {
+      "modifier_tower_splash_datadriven"
+      {
+        "Passive" "1"
+        "IsHidden"  "1"
+
+        "OnCreated"
+        {
+          "ApplyModifier"
+          {
+            "ModifierName"  "modifier_splash_attack_mitigation_datadriven"
+            "Target"        "CASTER"
+          }
+        }
+  
+        "OnAttackLanded"
+        {
+          "Damage"
+          {
+              "Target"
+              {
+                  "Center"    "TARGET"
+                  "Radius"    "%radius_full"
+                  "Teams"     "DOTA_UNIT_TARGET_TEAM_ENEMY"
+                  "Types"     "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+              }
+              "Type"          "DAMAGE_TYPE_PHYSICAL"
+              "Damage"        "%attack_damage * (100 - %splash_damage_percent)"
+          }
+
+          "Damage"
+          {
+              "Target"
+              {
+                  "Center"    "TARGET"
+                  "Radius"    "%radius_medium"
+                  "Teams"     "DOTA_UNIT_TARGET_TEAM_ENEMY"
+                  "Types"     "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+              }
+              "Type"          "DAMAGE_TYPE_PHYSICAL"
+              "Damage"        "%attack_damage * %splash_damage_percent"
+          }
+        }
+      }
+
+      "modifier_splash_attack_mitigation_datadriven"
+      {
+        "IsDebuff" "1"
+        "Properties"
+        {
+          "MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE" "-99"
+        }
+      }
+    }
+  }

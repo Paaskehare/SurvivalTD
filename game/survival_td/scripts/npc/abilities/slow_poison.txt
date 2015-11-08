@@ -1,0 +1,93 @@
+//=================================================================
+  // Slow Tower: Slow Poison
+  //=================================================================
+  "slow_poison"
+  {
+    "BaseClass"               "ability_datadriven"
+    "AbilityName"             "Slow_Poison"
+    "MaxLevel"                "1"
+
+    "AbilityBehavior"         "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityUnitDamageType"   "DAMAGE_TYPE_MAGICAL"
+    "AbilityUnitTargetTeam"   "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityTextureName"      "venomancer_poison_sting"
+
+    "precache" {
+      "particle" "particles/units/heroes/hero_venomancer/venomancer_poison_debuff_nova.vpcf"
+    }
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "01"
+      {
+        "var_type"        "FIELD_FLOAT"
+        "duration"        "5.0"
+      }
+      "02"
+      {
+        "var_type"          "FIELD_INTEGER"
+        "damage"          "4"
+      }
+      "03"
+      {
+        "var_type"          "FIELD_INTEGER"
+        "movement_speed"      "-50"
+      }     
+    }
+
+    "Modifiers"
+    {
+      "modifier_poison_sting_datadriven"
+      {
+        "Passive" "1"
+        "IsHidden"  "1"
+  
+        "OnAttackLanded"
+        {
+          "ApplyModifier"
+          {
+            "ModifierName"  "modifier_poison_sting_debuff_datadriven"
+            "Target"    "TARGET"
+          }
+        }
+      }
+  
+      "modifier_poison_sting_debuff_datadriven"
+      {
+        "IsDebuff"  "1"
+        "Duration"  "%duration"
+  
+        "ThinkInterval" "1.0"
+
+        "EffectName"  "particles/units/heroes/hero_venomancer/venomancer_poison_debuff_nova.vpcf"
+        "EffectAttachType"  "follow_origin"
+  
+        "OnIntervalThink"
+        {
+          "Damage"
+          {
+            "Target"  "TARGET"
+            "Type"    "DAMAGE_TYPE_MAGICAL"
+            "Damage"  "%damage"
+          }
+        }
+  
+        "OnCreated"
+        {
+          "Damage"
+          {
+            "Target"  "TARGET"
+            "Type"    "DAMAGE_TYPE_MAGICAL"
+            "Damage"  "%damage"
+          }
+        }
+  
+        "Properties"
+        {
+          "MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"    "%movement_speed"
+        }
+      }
+    }
+  }

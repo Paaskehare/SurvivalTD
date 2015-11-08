@@ -1,0 +1,64 @@
+"hidden_tower_states"
+  {
+    "BaseClass"               "ability_datadriven"
+    "AbilityBehavior"         "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+    "AbilityName"             "Hidden Tower States"
+    "IsDebuff"  "0"
+    "IsHidden"  "1"
+    "MaxLevel"  "1"
+
+    "AbilityBehavior"         "DOTA_ABILITY_BEHAVIOR_HIDDEN"
+
+    "Modifiers"
+    {
+        "modifier_state_building_process"
+        {
+            "Passive"   "1"
+            "IsHidden"  "1"
+            "Duration"  "%duration"
+            "States"
+            {
+                "MODIFIER_STATE_STUNNED" "MODIFIER_STATE_VALUE_ENABLED"
+            }
+        }
+
+        "modifier_attack_system"
+        {
+            "IsHidden"  "1"
+            "Passive"   "1"
+
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_DISABLE_AUTOATTACK" "1"
+            }
+            "States"
+            {
+                "MODIFIER_STATE_SPECIALLY_DENIABLE" "MODIFIER_STATE_VALUE_ENABLED"
+            }
+
+            "ThinkInterval"  "0.1"
+            "OnIntervalThink"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"    "abilities/attacks.lua"
+                    "Function"      "AutoAcquire"
+                }
+            }
+        }
+
+        "modifier_building_destroy"
+        {
+            "Passive"     "1"
+            "IsHidden"    "1"
+            "Duration"    "%duration"
+            "States"
+            {
+                "MODIFIER_STATE_UNSELECTABLE" "MODIFIER_STATE_VALUE_ENABLED"
+                "MODIFIER_STATE_NOT_ON_MINIMAP" "MODIFIER_STATE_VALUE_ENABLED"
+                "MODIFIER_STATE_NO_HEALTH_BAR"  "MODIFIER_STATE_VALUE_ENABLED"
+                "MODIFIER_STATE_STUNNED" "MODIFIER_STATE_VALUE_ENABLED"
+            }
+        }
+    }
+  }

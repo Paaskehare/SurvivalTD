@@ -1,0 +1,20 @@
+<root>
+    <styles>
+        <include src="file://{resources}/styles/custom_game/custom_notifications.css" />
+    </styles>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/custom_gamestate.js" />
+        <include src="file://{resources}/scripts/custom_game/custom_notifications.js" />
+    </scripts>
+    <Panel class="CustomNotifications" hittest="false">
+        <Panel id="LeftNotifications" hittest="false">
+            <!--<Label class="NotificationMessage" hittest="false" text="Not Enough Gold"/>-->
+        </Panel>
+        <Panel id="BottomNotifications" hittest="false">
+            <!--<Label class="NotificationMessage" hittest="false" text="Not Enough Gold"/>-->
+        </Panel>
+        <Panel id="TopNotifications" hittest="false">
+            <!--<Label class="NotificationMessage" hittest="false" text="Not Enough Gold"/>-->
+        </Panel>
+    </Panel>
+</root>

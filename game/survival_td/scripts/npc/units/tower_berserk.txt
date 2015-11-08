@@ -1,0 +1,89 @@
+//=================================================================
+  // Tower: Archer Tower
+  //=================================================================
+  "tower_berserk"
+  {
+    "BaseClass"                     "npc_dota_creature"
+    "Model"                         "models/heroes/clinkz/clinkz.vmdl"
+    "ModelScale"                    "0.8"
+    "Level"                         "3"
+    "HealthBarOffset"               "140"
+    "HasInventory"                  "0"
+    "AbilityLayout"                 "4"
+    "Ability1"                      "sell_tower"
+    "Ability2"                      "tower_berserk_splash_attack"
+    "Ability3"                      ""
+    "Ability4"                      ""
+    "SoundSet"                      "Hero_Clinkz"
+    "GameSoundsFile"                "soundevents/game_sounds_heroes/game_sounds_clinkz.vsndevts"
+
+    "GoldCost"                      "600"
+    "BuildTime"                     "15"
+    "RequiresLevel"                 "4"
+    "Portrait"                      "npc_dota_hero_clinkz"
+    "Hotkey"                        "K"
+
+    "AttackCapabilities"            "DOTA_UNIT_CAP_RANGED_ATTACK"
+    "AttackDamageType"              "DAMAGE_TYPE_ArmorPhysical"
+    "AttackDamageMin"               "800"
+    "AttackDamageMax"               "2000"
+    "AttackRate"                    "0.40"
+    "AttackAnimationPoint"          "0.10"
+    "AttackAcquisitionRange"        "1500"
+    "AttackRange"                   "1500"
+    "ProjectileModel"               "particles/units/heroes/hero_clinkz/clinkz_searing_arrow.vpcf"
+    "ProjectileSpeed"               "2200"
+
+    "BountyGoldMin"                 "0.0"
+    "BountyGoldMax"                 "0.0"
+
+    "BoundsHullName"                "DOTA_HULL_SIZE_SMALL"
+    "RingRadius"                    "100"
+    "HealthBarOffset"               "260"
+
+    "MovementCapabilities"          "DOTA_UNIT_CAP_MOVE_NONE"
+    "MovementSpeed"                 "0"         // Speed
+    "MovementTurnRate"              "1.0"           // Turning rate.
+    "StatusHealth"                  "100"      // Base health.
+    "StatusHealthRegen"             "0"         // Health regeneration rate.
+    "StatusMana"                    "0"         // Base mana.
+    "StatusManaRegen"               "0"         // Mana regeneration rate.
+
+    "VisionDaytimeRange"            "1000"      // Range of vision during day light.
+    "VisionNighttimeRange"          "1000"      // Range of vision at night time.
+
+    "CombatClassAttack"             "DOTA_COMBAT_CLASS_ATTACK_PIERCE"
+    "CombatClassDefend"             "DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
+    "UnitRelationshipClass"         "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+    "AttributePrimary"              "DOTA_ATTRIBUTE_STRENGTH"
+    "AttributeBaseStrength"         "0"            // Base strength
+    "AttributeStrengthGain"         "0"            // Strength bonus per level.
+    "AttributeBaseAgility"          "0"            // Base agility
+    "AttributeAgilityGain"          "0"            // Agility bonus per level.
+    "AttributeBaseIntelligence"     "0"            // Base intelligence
+    "AttributeIntelligenceGain"     "0"            // Intelligence bonus per level.
+
+    "SelectOnSpawn"                 "0"
+    "IgnoreAddSummonedToSelection"  "1"
+   
+    // Creature Data
+    //----------------------------------------------------------------
+    "Creature"
+    {
+            "IsNeutralUnitType"             "0"
+            "CanBeDominated"                "0"
+            "AutoAttacksByDefault"          "1"
+            "CanRespawn"                    "0"
+            "DisableClumpingBehavior"       "1"
+            "AttachWearables"
+            {
+                    "Wearable1" { "ItemDef" "56" } // Skull
+                    "Wearable2" { "ItemDef" "4758" } // Bow
+                    "Wearable3" { "ItemDef" "58" } // Shoulder Pads
+                    "Wearable4" { "ItemDef" "59" } // Quiver
+                    "Wearable5" { "ItemDef" "60" } // Horns
+                    "Wearable6" { "ItemDef" "61" } // Gloves
+            }
+    }
+  }

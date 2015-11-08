@@ -1,0 +1,26 @@
+//=================================================================
+  // Builder: Build Tower
+  //=================================================================
+  "build_tower"
+  {
+    "BaseClass"               "ability_lua"
+    "ScriptFile"              "abilities/build_tower"
+    "AbilityName"             "Build_Tower"
+    "AbilityTextureName"      "build_tower"
+    "MaxLevel"                "1"
+
+    "IsHidden"                "1"
+    "IsCastableWhileHidden"   "1"
+
+    "AbilityBehavior"         "DOTA_ABILITY_BEHAVIOR_POINT"
+    "AbilityCastPoint"        "0.0"
+    "AbilityCooldown"         "0.0"
+    "AbilityCastRange"        "400"
+    "AbilityManaCost"         "0"
+
+    "precache"
+    {
+      "soundfile" "soundevents/game_sounds_custom.vsndevts"
+      "particle"  "particles/units/heroes/hero_alchemist/alchemist_lasthit_msg_gold.vpcf"
+    }
+  }

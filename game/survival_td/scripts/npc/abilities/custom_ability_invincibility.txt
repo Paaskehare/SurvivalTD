@@ -1,0 +1,26 @@
+//=================================================================================================================
+// Custom: INVINCIBILITY
+//=================================================================================================================
+"custom_ability_invincibility"
+{
+    "BaseClass"           "ability_datadriven"
+    "AbilityBehavior"     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityTextureName"  "keeper_of_the_light_illuminate_end"
+
+    "MaxLevel"  "1"
+        
+    "Modifiers"
+    {
+        "magic_immune"
+        {
+            "Passive"   "1"
+            "IsBuff"    "1"
+            "IsHidden"  "1"
+
+            "States"
+            {
+                "MODIFIER_STATE_INVULNERABLE"       "MODIFIER_STATE_VALUE_ENABLED"
+            }
+        }
+    }
+}

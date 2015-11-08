@@ -1,0 +1,68 @@
+//=================================================================
+  // Torch Tower: Splash Attack
+  //=================================================================
+  "tower_deranged_splash_attack"
+  {
+    "BaseClass"               "ability_datadriven"
+    "AbilityName"             "Splash Damage"
+    "MaxLevel"                "2"
+
+    "AbilityBehavior"         "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityUnitDamageType"   "DAMAGE_TYPE_PHYSICAL"
+    "AbilityUnitTargetTeam"   "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityTextureName"      "black_dragon_splash_attack"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "01" // AOE with full damage
+      {
+        "var_type"        "FIELD_FLOAT"
+        "radius"          "200"
+      }
+    }
+
+    "Modifiers"
+    {
+      "modifier_tower_deranged_splash_datadriven"
+      {
+        "Passive" "1"
+        "IsHidden"  "1"
+
+        "OnCreated"
+        {
+          "ApplyModifier"
+          {
+            "ModifierName"  "modifier_deranged_attack_mitigation_datadriven"
+            "Target"        "CASTER"
+          }
+        }
+  
+        "OnAttackLanded"
+        {
+          "Damage"
+          {
+              "Target"
+              {
+                  "Center"    "TARGET"
+                  "Radius"    "%radius"
+                  "Teams"     "DOTA_UNIT_TARGET_TEAM_ENEMY"
+                  "Types"     "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+              }
+              "Type"          "DAMAGE_TYPE_PHYSICAL"
+              "Damage"        "%attack_damage * 100"
+          }
+        }
+      }
+
+      "modifier_deranged_attack_mitigation_datadriven"
+      {
+        "IsDebuff" "1"
+        "Properties"
+        {
+          "MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE" "-99"
+        }
+      }
+    }
+  }

@@ -1,0 +1,207 @@
+.AbilityOverlayRoot
+{
+	horizontal-align: center;
+	vertical-align: bottom;
+	width: 100%;
+	height: 100%;
+}
+
+#ability_list
+{
+	flow-children: right;
+}
+
+.AbilityPanel
+{
+	margin-left: 4px;
+	margin-right: 4px;/*
+	margin-top: 4px;
+	margin-bottom: 4px;*/
+}
+
+#ButtonAndLevel
+{
+	flow-children: down;
+}
+
+#AbilityButton
+{
+	width: 60px;
+	height: 60px;
+	border: 2px solid #111;
+	tooltip-position: top;
+}
+
+#AbilityButton:hover
+{
+	border: 2px solid white;
+}
+
+#AbilityButton:active
+{
+	border: 4px solid white;
+}
+
+.is_passive #AbilityButton
+{
+	box-shadow: inset 0 0 5px #000000;
+	border: 0px;
+}
+
+.no_level DOTAAbilityImage
+{
+	saturation: 0;
+	wash-color: #303030;
+}
+
+.insufficient_mana DOTAAbilityImage
+{
+	saturation: 0;
+	wash-color: #1569be;
+}
+
+#CooldownOverlay
+{
+	height: 100%;
+	background-color: #000000DD;
+}
+
+#CooldownTimer
+{
+	color: white;
+    font-size: 24px;
+	text-shadow: 0px 0px 6px 6 #000000;
+    horizontal-align: center;
+    vertical-align: center;
+}
+
+#Cooldown
+{
+	width: 100%;
+	height: 100%;
+	visibility: collapse;
+}
+
+.in_cooldown #Cooldown
+{
+	visibility: visible;
+}
+
+#ManaCost
+{
+	color: white;
+    font-size: 14px;
+    font-weight: bold;
+	text-shadow: 0px 0px 6px 8 #245191;
+	margin-right: 0px;
+	margin-bottom: 0px;
+
+	vertical-align: bottom;
+	horizontal-align: right;
+}
+
+.no_mana_cost #ManaCost
+{
+	visibility: collapse;
+}
+
+#GoldCost {
+	color: white;
+    font-size: 14px;
+    font-weight: bold;
+	text-shadow: 1px 1px 2px 0 #000;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	box-shadow: 0px 0px 3px #F3C909;
+	background-color: #F3C909;
+
+	padding-left: 4px;
+	padding-top: 3px;
+
+	vertical-align: bottom;
+	horizontal-align: left;
+}
+
+.no_gold_cost #GoldCost
+{
+	visibility: collapse;
+}
+
+#Hotkey
+{
+	margin-left: -4px;
+
+	vertical-align: top;
+	horizontal-align: left;
+	min-width: 18px;
+	min-height: 18px;
+
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #393939 ), to( #414849 ) );
+	border: 1px solid #ffffff05;
+	box-shadow: fill black 1px 1px 2px 2px;
+}
+
+#HotkeyText
+{
+	color: #bba995;
+ 	text-shadow: 1px 1px 2px 2 #000000;
+    font-size: 14px;
+    font-weight: bold;
+	vertical-align: center;
+	text-align: center;
+	width: 100%;
+	margin: -2px;
+}
+
+.no_level #Hotkey,
+.is_passive #Hotkey,
+.no_hotkey #Hotkey
+{
+	visibility: collapse;
+}
+
+#AbilityStatusBorder
+{
+	margin: 2px;
+	border: 4px solid transparent;
+}
+
+.auto_cast_enabled #AbilityStatusBorder
+{
+	border: 4px solid orange;
+}
+
+.toggle_active #AbilityStatusBorder
+{
+	border: 4px solid green;
+}
+
+#AbilityLevelContainer
+{
+	horizontal-align: center;
+	flow-children: right;
+}
+
+.LevelPanel
+{
+	width: 12px;
+	height: 12px;
+	margin-left: 1px;
+	margin-right: 1px;
+
+	border-radius: 3px;
+
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #2e2716 ), to( #020302 ) );
+	border: 2px solid #ffffff05;
+}
+
+.active_level.LevelPanel
+{
+	background-color: #ceaa31;
+	border: 2px solid #734918;
+}
+
+
+#CustomAbilityPrecache {
+	visibility: collapse;
+}

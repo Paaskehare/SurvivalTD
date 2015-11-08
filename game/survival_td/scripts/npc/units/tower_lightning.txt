@@ -1,0 +1,84 @@
+//=================================================================
+  // Tower: Lightning Tower
+  //=================================================================
+  "tower_lightning"
+  {
+    "BaseClass"                     "npc_dota_creature"
+    "Model"                         "models/heroes/zuus/zuus.vmdl"
+    "ModelScale"                    "0.8"
+    "Level"                         "2"
+    "HealthBarOffset"               "140"
+    "HasInventory"                  "0"
+    "AbilityLayout"                 "4"
+    "Ability1"                      "sell_tower"
+    "Ability2"                      "upgrade_tower_lightning"
+    "Ability3"                      ""
+    "Ability4"                      ""
+    "SoundSet"                      "Hero_Zuus"
+    "GameSoundsFile"                "soundevents/game_sounds_heroes/game_sounds_zuus.vsndevts"
+
+    "GoldCost"                      "130"
+    "BuildTime"                     "10"
+    "Portrait"                      "npc_dota_hero_zuus"
+    "RequiresLevel"                 "3"
+    "Hotkey"                        "L"
+
+    "AttackCapabilities"            "DOTA_UNIT_CAP_RANGED_ATTACK"
+    "AttackDamageType"              "DAMAGE_TYPE_ArmorPhysical"
+    "AttackDamageMin"               "500"
+    "AttackDamageMax"               "500"
+    "AttackRate"                    "0.50"
+    "AttackAnimationPoint"          "0.25"
+    "AttackAcquisitionRange"        "1300"
+    "AttackRange"                   "1300"
+    "ProjectileModel"               "particles/units/heroes/hero_zuus/zuus_base_attack.vpcf"
+    "ProjectileSpeed"               "2200"
+
+    "BountyGoldMin"                 "0.0"
+    "BountyGoldMax"                 "0.0"
+
+    "BoundsHullName"                "DOTA_HULL_SIZE_SMALL"
+    "RingRadius"                    "100"
+    "HealthBarOffset"               "260"
+
+    "MovementCapabilities"          "DOTA_UNIT_CAP_MOVE_NONE"
+    "MovementSpeed"                 "0"         // Speed
+    "MovementTurnRate"              "1.0"           // Turning rate.
+    "StatusHealth"                  "100"      // Base health.
+    "StatusHealthRegen"             "0"         // Health regeneration rate.
+    "StatusMana"                    "0"         // Base mana.
+    "StatusManaRegen"               "0"         // Mana regeneration rate.
+
+    "VisionDaytimeRange"            "1000"      // Range of vision during day light.
+    "VisionNighttimeRange"          "1000"      // Range of vision at night time.
+
+    "CombatClassAttack"             "DOTA_COMBAT_CLASS_ATTACK_LIGHT"
+    "CombatClassDefend"             "DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
+    "UnitRelationshipClass"         "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+    "AttributePrimary"              "DOTA_ATTRIBUTE_STRENGTH"
+    "AttributeBaseStrength"         "0"            // Base strength
+    "AttributeStrengthGain"         "0"            // Strength bonus per level.
+    "AttributeBaseAgility"          "0"            // Base agility
+    "AttributeAgilityGain"          "0"            // Agility bonus per level.
+    "AttributeBaseIntelligence"     "0"            // Base intelligence
+    "AttributeIntelligenceGain"     "0"            // Intelligence bonus per level.
+
+    "SelectOnSpawn"                 "0"
+    "IgnoreAddSummonedToSelection"  "1"
+   
+    // Creature Data
+    //----------------------------------------------------------------
+    "Creature"
+    {
+            "IsNeutralUnitType"             "0"
+            "CanBeDominated"                "0"
+            "AutoAttacksByDefault"          "1"
+            "CanRespawn"                    "0"
+            "DisableClumpingBehavior"       "1"
+            //"AttachWearables"
+            //{
+            //        "Wearable1" { "ItemDef" "5412" }
+            //}
+    }
+  }

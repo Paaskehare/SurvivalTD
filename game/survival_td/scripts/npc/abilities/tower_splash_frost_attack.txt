@@ -1,0 +1,143 @@
+//=================================================================
+  // Frost Tower: Frost Splash Attack
+  //=================================================================
+  "tower_splash_frost_attack"
+  {
+    "BaseClass"               "ability_datadriven"
+    "AbilityName"             "Splash Damage"
+    "MaxLevel"                "1"
+
+    "AbilityBehavior"         "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityUnitDamageType"   "DAMAGE_TYPE_PHYSICAL"
+    "AbilityUnitTargetTeam"   "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityTextureName"      "ghost_frost_attack" // greevil_laguna_blade
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+      "01" // AOE with full damage
+      {
+        "var_type"        "FIELD_FLOAT"
+        "radius_full"     "150"
+      }
+      "02" // AOE with medium damage
+      {
+        "var_type"        "FIELD_FLOAT"
+        "radius_medium"   "280"
+      }
+      "03"
+      {
+        "var_type"        "FIELD_FLOAT"
+        "radius_frost"    "280"
+      }
+      "04"
+      {
+        "var_type"        "FIELD_FLOAT"
+        "frost_damage_percent"    "30"
+      }
+      "05"
+      {
+        "var_type"        "FIELD_FLOAT"
+        "duration"        "5"
+      }
+      "06"
+      {
+        "var_type"        "FIELD_FLOAT"
+        "movement_speed"  "-35"
+      }
+    }
+
+    "precache"
+    {
+      "particle" "particles/status_fx/status_effect_frost.vpcf"
+    }
+
+    "Modifiers"
+    {
+      "modifier_tower_splash_frost_datadriven"
+      {
+        "Passive" "1"
+
+        "OnCreated"
+        {
+          "ApplyModifier"
+          {
+            "ModifierName"  "modifier_frost_attack_mitigation_datadriven"
+            "Target"        "CASTER"
+          }
+        }
+  
+        "OnAttackLanded"
+        {
+          "Damage"
+          {
+              "Target"
+              {
+                  "Center"    "TARGET"
+                  "Radius"    "%radius_full"
+                  "Teams"     "DOTA_UNIT_TARGET_TEAM_ENEMY"
+                  "Types"     "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+              }
+              "Type"          "DAMAGE_TYPE_MAGICAL"
+              "Damage"        "%attack_damage * (100 - %frost_damage_percent)"
+          }
+
+          "Damage"
+          {
+              "Target"
+              {
+                  "Center"    "TARGET"
+                  "Radius"    "%radius_medium"
+                  "Teams"     "DOTA_UNIT_TARGET_TEAM_ENEMY"
+                  "Types"     "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+              }
+              "Type"          "DAMAGE_TYPE_MAGICAL"
+              "Damage"        "%attack_damage * %frost_damage_percent"
+          }
+
+          "ActOnTargets"
+          {
+            "Target"
+            {
+              "Center"    "TARGET"
+              "Radius"    "%radius_frost"
+              "Teams"     "DOTA_UNIT_TARGET_TEAM_ENEMY"
+              "Types"     "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+            }
+            "Action"
+            {
+              "ApplyModifier"
+              {
+                "ModifierName"  "modifier_frost_slow_debuff_datadriven"
+                "Target"        "TARGET"
+              }
+            }
+          }
+        }
+      }
+
+      "modifier_frost_attack_mitigation_datadriven"
+      {
+        "IsDebuff" "1"
+        "Properties"
+        {
+          "MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE" "-99"
+        }
+      }
+
+      "modifier_frost_slow_debuff_datadriven"
+      {
+        "IsDebuff"  "1"
+        "Duration"  "%duration"
+
+        "StatusEffectName"     "particles/status_fx/status_effect_frost.vpcf"
+        "StatusEffectPriority" "10"
+
+        "Properties"
+        {
+          "MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE" "%movement_speed"
+        }
+      }
+    }
+  }

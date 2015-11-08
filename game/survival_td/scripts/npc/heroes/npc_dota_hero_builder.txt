@@ -1,0 +1,41 @@
+"npc_dota_hero_builder"
+  {
+    "AbilityLaout"          "4"
+    "override_hero"         "npc_dota_hero_omniknight"
+    "SoundSet"              "0"
+
+    "Ability1"              "upgrade_tier"
+    "Ability2"              "custom_ability_invincibility"
+    "Ability3"              "build_tower"
+    "Ability4"              ""
+
+    "ArmorPhysical"         "0"
+    "MagicalResistance"     "0"
+
+    "AttackCapabilities"    "DOTA_UNIT_CAP_NO_ATTACK"
+    "AttackDamageMin"       "1"
+    "AttackDamageMax"       "1"
+
+    "AttributeBaseStrength" "0"                   // Base strength
+    "AttributeStrengthGain" "0"                   // Strength bonus per level.
+    "AttributeBaseIntelligence" "0"               // Base intelligence
+    "AttributeIntelligenceGain" "0"               // Intelligence bonus per level.
+    "AttributeBaseAgility"  "0"                   // Base agility
+    "AttributeAgilityGain"  "0"                   // Agility bonus per level.
+
+    "BountyXP"              "0"
+    "BountyGoldMin"         "0"
+    "BountyGoldMax"         "0"
+
+    "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_FLY"
+    "MovementSpeed"         "1000"                  // Speed.
+    "MovementTurnRate"      "1.0"                   // Turning rate.
+
+    "StatusHealth"          "100"                   // Base health.
+    "StatusHealthRegen"     "0.0"                   // Health regeneration rate.
+    "StatusMana"            "100"                   // Base mana.
+    "StatusManaRegen"       "10.0"                  // Mana regeneration rate.
+
+    "VisionDaytimeRange"    "1800"                  // Range of vision at night time.
+    "VisionNighttimeRange"  "1800"                  // Range of vision at night time.
+  }

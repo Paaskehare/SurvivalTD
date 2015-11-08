@@ -1,0 +1,37 @@
+<root>
+  <styles>
+    <include src="file://{resources}/styles/custom_game/custom_loading_screen.css" />
+  </styles>
+  <Panel class="AddonLoadingRoot">
+    <Panel id="BackWall">
+      <Image id="BackWallImage" src="file://{images}/custom_game/loading_screen/splash-back-wall.png" />
+    </Panel>
+    <Panel id="BackFog">
+      <Image id="BackFogImage" src="file://{images}/custom_game/loading_screen/splash-back-fog.png" />
+    </Panel>
+    <Panel id="FrontWalls">
+      <Image id="FrontWallImage" src="file://{images}/custom_game/loading_screen/splash-front-walls.png" />
+    </Panel>
+    <Panel id="FrontFog">
+      <Image id="FrontFogImage" src="file://{images}/custom_game/loading_screen/splash-front-fog.png" />
+    </Panel>
+    <Panel id="FireBallLeft">
+      <Image id="FireBallLeftImage" src="file://{images}/custom_game/loading_screen/splash-fireball-left.png" />
+    </Panel>
+    <Panel id="FireBallRight">
+      <Image id="FireBallRightImage" src="file://{images}/custom_game/loading_screen/splash-fireball-right.png" />
+    </Panel>
+    <Panel id="AddonTitle">
+      <Image id="AddonTitleImage" src="file://{images}/custom_game/loading_screen/splash-title.png" />
+    </Panel>
+    <!--<Panel id="FireBallRightTrail">
+      <Image id="FireBallRightTrailImage" src="file://{images}/custom_game/loading_screen/splash-fireball-right-trail.png" />
+    </Panel>
+    <Panel id="FireBallRightProjectile">
+      <Image id="FireBallRightProjectileImage" src="file://{images}/custom_game/loading_screen/splash-fireball-right-projectile.png" />
+    </Panel>-->
+    <!--<Panel id="TitlePanel">
+      <Label id="AddonTitle" text="#addon_game_name" style="" />
+    </Panel>-->
+  </Panel>
+</root>

@@ -1,0 +1,184 @@
+﻿"lang"
+{
+	"Language"		"English"
+	"Tokens"
+	{		
+		"game_mode_15"				                "Survival TD"
+		"addon_game_name"                     			"Survival TD"
+		
+		//"DOTA_Basics"						"ABILITIES"
+		//"DOTA_Upgrades"					"ITEMS"
+		//"DOTA_Shop_Category_Basics"				"ABILITIES"
+		//"DOTA_Shop_Category_Upgrades"			        "ITEMS"
+		
+        	//--------------------
+        	//Abilities
+        	//--------------------
+        	"DOTA_Tooltip_ability_build_tower"			"Build Tower"
+                "DOTA_Tooltip_ability_upgrade_tier"                     "Upgrade Tier"
+                "DOTA_Tooltip_ability_upgrade_tier_Description"         "Unlocks new towers and upgrades"
+                "DOTA_Tooltip_ability_sell_tower"                       "Sell Tower"
+                "DOTA_Tooltip_ability_sell_tower_Description"           "Sell tower and get back 50%% of the original gold cost. If the tower is upgraded you get back 50%% of the upgrade cost"
+                "DOTA_Tooltip_ability_slow_poison"                      "Slow Poison"
+                // A poison attack that deals <Aspo,DataA1> damage per second, and slows the target enemy's movement by <Aspo,DataB1,%>% and attack by <Aspo,DataC1,%>% for <Aspo,Dur1> seconds.
+                "DOTA_Tooltip_ability_slow_poison_Description"          "A poison attack that deals %damage% damage per second, and slows the target enemy's movement by %movement_speed%%% for %duration% seconds."
+                "DOTA_Tooltip_ability_slow_poison_duration"             "DURATION:"
+                "DOTA_Tooltip_ability_slow_poison_damage"               "DPS:"
+                "DOTA_Tooltip_ability_slow_poison_movement_speed"       "%SLOW:"
+
+                "DOTA_Tooltip_ability_tower_splash_attack"              "Splash Attack"
+                "DOTA_Tooltip_ability_tower_splash_attack_Description"  "Deals damage in an area around the target"
+                "DOTA_Tooltip_ability_tower_splash_attack_radius_full"  "FULL DAMAGE RADIUS:"
+                "DOTA_Tooltip_ability_tower_splash_attack_radius_medium" "RADIUS:"
+                "DOTA_Tooltip_ability_tower_splash_attack_splash_damage_percent" "%DAMAGE:"
+
+                "DOTA_Tooltip_ability_tower_splash_frost_attack"        "Frost Breath"
+
+                "DOTA_Tooltip_ability_upgrade_tower_archer"                     "Upgrade Archer Tower"
+                "DOTA_Tooltip_ability_upgrade_tower_archer_Description"         "Increases damage, range and attack speed."
+                "DOTA_Tooltip_ability_upgrade_tower_slow"                       "Upgrade Slow Tower"
+                "DOTA_Tooltip_ability_upgrade_tower_slow_Description"           "Increases damage, range and attack speed."
+                "DOTA_Tooltip_ability_upgrade_tower_skyfury"                    "Upgrade Skyfury Tower"
+                "DOTA_Tooltip_ability_upgrade_tower_skyfury_Description"        ""
+                "DOTA_Tooltip_ability_upgrade_tower_frost"                      "Upgrade Frost Tower"
+                "DOTA_Tooltip_ability_upgrade_tower_frost_Description"          ""
+                "DOTA_Tooltip_ability_upgrade_tower_boulder"                    "Upgrade Boulder Tower"
+                "DOTA_Tooltip_ability_upgrade_tower_boulder_Description"        ""
+                "DOTA_Tooltip_ability_upgrade_tower_mortar"                     "Upgrade Tower Mortar"
+                "DOTA_Tooltip_ability_upgrade_tower_mortar_Description"         ""
+                "DOTA_Tooltip_ability_upgrade_tower_splash"                     "Upgrade Tower Splash"
+                "DOTA_Tooltip_ability_upgrade_tower_splash_Description"         ""
+                "DOTA_Tooltip_ability_upgrade_tower_lightning"                  "Upgrade Lightning Tower"
+                "DOTA_Tooltip_ability_upgrade_tower_lightning_Description"      "Increases damage and range."
+
+                //------------------------
+                // Towers
+                //------------------------
+
+                "tower_archer"                                          "Archer Tower"
+                "tower_slow"                                            "Slow Tower"
+
+                //------------------------
+                // Units
+                //------------------------
+
+                "npc_dota_hero_builder"                                 "Builder"
+
+                "creep_wave_1"                                          "Donkey"
+                "creep_wave_2"                                          "Zombie"
+
+                // DOTA 2 MODKIT GENERATED TOOLTIPS FOR: survival_td
+                // Keys already defined in addon_english.txt are not listed, nor are Modifiers with the property "IsHidden" "1".
+
+                // ******************** HEROES ********************
+                "npc_dota_hero_omniknight"                                                        "Builder"
+
+                // ******************** UNITS ********************
+                "creep_wave_3"                                                                    "Creep Wave 3"
+                "creep_wave_4"                                                                    "Creep Wave 4"
+                "creep_wave_5"                                                                    "Creep Wave 5"
+                "creep_wave_6"                                                                    "Creep Wave 6"
+                "creep_wave_7"                                                                    "Creep Wave 7"
+                "creep_wave_8"                                                                    "Creep Wave 8"
+                "creep_wave_9"                                                                    "Creep Wave 9"
+                "creep_wave_10"                                                                   "Creep Wave 10"
+                "creep_wave_11"                                                                   "Creep Wave 11"
+                "creep_wave_12"                                                                   "Creep Wave 12"
+                "creep_wave_13"                                                                   "Creep Wave 13"
+                "creep_wave_14"                                                                   "Creep Wave 14"
+                "creep_wave_15"                                                                   "Creep Wave 15"
+                "creep_wave_16"                                                                   "Creep Wave 16"
+                "creep_wave_17"                                                                   "Creep Wave 17"
+                "creep_wave_18"                                                                   "Creep Wave 18"
+                "creep_wave_19"                                                                   "Creep Wave 19"
+                "creep_wave_20"                                                                   "Creep Wave 20"
+                "creep_wave_21"                                                                   "Creep Wave 21"
+                "npc_dummy_unit"                                                                  "Dummy Unit"
+
+                // ******************** ABILITY MODIFIERS ********************
+                "DOTA_Tooltip_modifier_channel_start"                                             "Channel Start"
+                "DOTA_Tooltip_modifier_channel_start_Description"                                 ""
+
+                "DOTA_Tooltip_modifier_poison_sting_debuff_datadriven"                            "Poison Sting Debuff Datadriven"
+                "DOTA_Tooltip_modifier_poison_sting_debuff_datadriven_Description"                ""
+
+                "DOTA_Tooltip_modifier_mortar_attack_mitigation_datadriven"                       "Mortar Attack Mitigation Datadriven"
+                "DOTA_Tooltip_modifier_mortar_attack_mitigation_datadriven_Description"           ""
+
+                "DOTA_Tooltip_modifier_splash_attack_mitigation_datadriven"                       "Splash Attack Mitigation Datadriven"
+                "DOTA_Tooltip_modifier_splash_attack_mitigation_datadriven_Description"           ""
+
+                "DOTA_Tooltip_modifier_tower_splash_frost_datadriven"                             "Tower Splash Frost Datadriven"
+                "DOTA_Tooltip_modifier_tower_splash_frost_datadriven_Description"                 ""
+
+                "DOTA_Tooltip_modifier_frost_attack_mitigation_datadriven"                        "Frost Attack Mitigation Datadriven"
+                "DOTA_Tooltip_modifier_frost_attack_mitigation_datadriven_Description"            ""
+
+                "DOTA_Tooltip_modifier_frost_slow_debuff_datadriven"                              "Frost Slow Debuff Datadriven"
+                "DOTA_Tooltip_modifier_frost_slow_debuff_datadriven_Description"                  ""
+
+                // ******************** ABILITIES ********************
+
+                "DOTA_Tooltip_ability_hidden_tower_states"                                        "Hidden Tower States"
+                "DOTA_Tooltip_ability_hidden_tower_states_Description"                            ""
+
+                "DOTA_Tooltip_ability_tower_mortar_attack"                                        "Tower Mortar Attack"
+                "DOTA_Tooltip_ability_tower_mortar_attack_Description"                            "Deals damage in an area around the target"
+                "DOTA_Tooltip_ability_tower_mortar_attack_radius"                                 "RADIUS:"
+                "DOTA_Tooltip_ability_tower_mortar_attack_splash_damage_percent"                  "%SPLASH DAMAGE:"
+
+                "DOTA_Tooltip_ability_tower_splash_frost_attack_radius_full"                      "RADIUS FULL:"
+                "DOTA_Tooltip_ability_tower_splash_frost_attack_radius_medium"                    "RADIUS MEDIUM:"
+                "DOTA_Tooltip_ability_tower_splash_frost_attack_radius_frost"                     "RADIUS FROST:"
+                "DOTA_Tooltip_ability_tower_splash_frost_attack_frost_damage_percent"             "%FROST DAMAGE:"
+                "DOTA_Tooltip_ability_tower_splash_frost_attack_duration"                         "DURATION:"
+                "DOTA_Tooltip_ability_tower_splash_frost_attack_movement_speed"                   "%MOVEMENT SPEED:"
+
+                "DOTA_Tooltip_ability_tower_boulder_attack"                                       "Boulder Attack"
+                "DOTA_Tooltip_ability_tower_boulder_attack_Description"                           "Deals damage in an area around the target"
+                "DOTA_Tooltip_ability_tower_boulder_attack_radius_full"                           "RADIUS FULL:"
+                "DOTA_Tooltip_ability_tower_boulder_attack_radius_medium"                         "RADIUS MEDIUM:"
+                "DOTA_Tooltip_ability_tower_boulder_attack_splash_damage_percent"                 "%SPLASH DAMAGE:"
+
+                "DOTA_Tooltip_ability_upgrade_tower"                                              "Upgrade Tower"
+                "DOTA_Tooltip_ability_upgrade_tower_Description"                                  ""
+
+                "DOTA_Tooltip_ability_custom_ability_invincibility"                               "Invincibility"
+                "DOTA_Tooltip_ability_custom_ability_invincibility_Description"                   "Omniknight is omnipotent"
+
+                "DOTA_Tooltip_ability_trojan_horse_servants"                                      "Trojan Servants"
+                "DOTA_Tooltip_ability_trojan_horse_servants_Description"                          "A trojan horse does not simply move by itself"
+
+                "DOTA_Tooltip_ability_tower_deranged_splash_attack"                               "Splash Damage"
+                "DOTA_Tooltip_ability_tower_deranged_splash_attack_Description"                   "Deals damage in an area around the target"
+                "DOTA_Tooltip_ability_tower_deranged_splash_attack_radius"                        "RADIUS:"
+
+                "DOTA_Tooltip_ability_nova_critical_strike"                                       "Critical Strike"
+                "DOTA_Tooltip_ability_nova_critical_strike_Description"                           ""
+                "DOTA_Tooltip_ability_nova_critical_strike_crit_chance"                           "%CRIT CHANCE:"
+                "DOTA_Tooltip_ability_nova_critical_strike_crit_mult"                             "%CRIT MULTIPLIER:"
+
+                "DOTA_Tooltip_ability_tower_nova_splash_attack"                                   "Nova Blast"
+                "DOTA_Tooltip_ability_tower_nova_splash_attack_Description"                       "Deals damage in an area around the target"
+                "DOTA_Tooltip_ability_tower_nova_splash_attack_radius_full"                       "FULL DAMAGE RADIUS:"
+                "DOTA_Tooltip_ability_tower_nova_splash_attack_radius_medium"                     "MEDIUM DAMAGE RADIUS:"
+                "DOTA_Tooltip_ability_tower_nova_splash_attack_splash_damage_percent"             "%BLAST DAMAGE:"
+
+                "DOTA_Tooltip_ability_tower_berserk_splash_attack"                                   "Berserk Splash"
+                "DOTA_Tooltip_ability_tower_berserk_splash_attack_Description"                       "Deals damage in an area around the target"
+                "DOTA_Tooltip_ability_tower_berserk_splash_attack_radius_full"                       "FULL DAMAGE RADIUS:"
+                "DOTA_Tooltip_ability_tower_berserk_splash_attack_radius_medium"                     "MEDIUM DAMAGE RADIUS:"
+                "DOTA_Tooltip_ability_tower_berserk_splash_attack_splash_damage_percent"             "%SPLASH DAMAGE:"
+
+
+                // ******************** ITEMS ********************
+                "DOTA_Tooltip_ability_item_example_item"                                          "Example Item"
+                "DOTA_Tooltip_ability_item_example_item_Description"                              ""
+                "DOTA_Tooltip_ability_item_example_item_duration"                                 "DURATION:"
+                "DOTA_Tooltip_ability_item_example_item_damage_reduction"                         "DAMAGE REDUCTION:"
+                "DOTA_Tooltip_ability_item_example_item_radius"                                   "RADIUS:"
+                "DOTA_Tooltip_ability_item_example_item_speed"                                    "SPEED:"
+                "DOTA_Tooltip_ability_item_example_item_distance"                                 "DISTANCE:"
+                "DOTA_Tooltip_ability_item_example_item_damage"                                   "DAMAGE:"
+	}
+}

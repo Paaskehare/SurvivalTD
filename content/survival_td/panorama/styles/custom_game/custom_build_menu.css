@@ -1,0 +1,89 @@
+.BuildMenuContainer {
+  width: 100%;
+  overflow: clip;
+  horizontal-align: right;
+  vertical-align: bottom;
+}
+
+.BuildMenu {
+  width: 100%;
+  height: 100%;
+  overflow: clip;
+  horizontal-align: right;
+  vertical-align: bottom;
+}
+
+#BuildMenuGrid {
+  width: 100%;
+  height: 160px;
+  overflow: clip;
+  flow-children: down;
+}
+
+.TowerGridRow {
+  width: 100%;
+  overflow: clip;
+  border-bottom: 1px solid black;
+  flow-children: right;
+}
+
+.GridTower #TowerButton {
+  background-color: black;
+  width: 88px;
+  height: 42px;
+  vertical-align: middle;
+  border-right: 1px solid black;
+  tooltip-position: top;
+}
+
+.GridTower #TowerButton #TowerCost {
+  color: black;
+  horizontal-align: right;
+  vertical-align: bottom;
+  font-size: 16px;
+  background-color: #F3C909;
+  padding-left: 2px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
+  color: white;
+}
+
+#TowerButton:hover {
+  border: 2px solid transparent;
+}
+
+.GridTower #TowerButton #TowerHotkey
+{
+  vertical-align: top;
+  horizontal-align: left;
+  width: 18px;
+  height: 18px;
+
+  background-color: gradient( linear, 0% 0%, 0% 100%, from( #393939 ), to( #414849 ) );
+  border: 1px solid #ffffff05;
+  box-shadow: fill black 1px 1px 2px 2px;
+}
+
+.GridTower #TowerButton #TowerHotkeyText
+{
+  color: #bba995;
+  text-shadow: 1px 1px 2px 2 #000000;
+  font-size: 14px;
+  font-weight: bold;
+  vertical-align: center;
+  text-align: center;
+  width: 100%;
+}
+
+.TowerTooltip b {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.Unavailable #TowerImage {
+  saturation: 0;
+}
+
+.Unavailable #TowerButton:hover {
+  border: 0;
+}

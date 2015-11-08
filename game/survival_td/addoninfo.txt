@@ -1,0 +1,85 @@
+"AddonInfo"
+{
+  "TeamCount" "4"
+  "maps"      "survival_map"
+  "IsPlayable"  "1"
+  "survival_map"
+  {
+          "MaxPlayers"                    "4"
+  }
+  "Default_Keys"
+    {
+        "01"
+        {
+            "Key"       "A"
+            "Command"   "+CustomBuild_tower_archer"
+            "Name"      "Build_Tower_Archer"
+        }
+        "02"
+        {
+            "Key"       "S"
+            "Command"   "+CustomBuild_tower_slow"
+            "Name"      "Build_Tower_Slow"
+        }
+        "03"
+        {
+            "Key"       "M"
+            "Command"   "+CustomBuild_tower_mortar"
+            "Name"      "Build_Tower_Mortar"
+        }
+        "04"
+        {
+            "Key"       "C"
+            "Command"   "+CustomBuild_tower_skyfury"
+            "Name"      "Build_Tower_Skyfury"
+        }
+        "05"
+        {
+            "Key"       "Z"
+            "Command"   "+CustomBuild_tower_frost"
+            "Name"      "Build_Tower_Frost"
+        }
+        "06"
+        {
+            "Key"       "X"
+            "Command"   "+CustomBuild_tower_splash"
+            "Name"      "Build_Tower_Splash"
+        }
+        "07"
+        {
+            "Key"       "B"
+            "Command"   "+CustomBuild_tower_boulder"
+            "Name"      "Build_Tower_Boulder"
+        }
+        "08"
+        {
+            "Key"       "L"
+            "Command"   "+CustomBuild_tower_lightning"
+            "Name"      "Build_Tower_Lightning"
+        }
+        "09"
+        {
+            "Key"       "P"
+            "Command"   "+CustomBuild_tower_deranged"
+            "Name"      "Build_Tower_Deranged"
+        }
+        "10"
+        {
+            "Key"       "K"
+            "Command"   "+CustomBuild_tower_berserk"
+            "Name"      "Build_Tower_Berserk"
+        }
+        "11"
+        {
+            "Key"       "H"
+            "Command"   "+CustomBuild_tower_halt"
+            "Name"      "Build_Tower_Halt"
+        }
+        "12"
+        {
+            "Key"       "N"
+            "Command"   "+CustomBuild_tower_nova"
+            "Name"      "Build_Tower_Nova"
+        }
+    }
+}

@@ -1,0 +1,24 @@
+<root>
+    <styles>
+        <include src="file://{resources}/styles/custom_game/custom_round_timer.css" />
+    </styles>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/custom_gamestate.js" />
+        <include src="file://{resources}/scripts/custom_game/custom_round_timer.js" />
+    </scripts>
+    <Panel class="RoundTimerRoot" hittest="false">
+        <Panel id="RoundTimerContainer" hittest="false">
+            <Panel id="RoundTimerBar" hittest="false">
+                <Panel id="RoundTimerBarPercentage" hittest="false"></Panel>
+            </Panel>
+            <Panel id="RoundTimerTextContainer" hittest="false">
+                <Panel id="RoundTimerTextHeader">
+                    <Label id="RoundTimerRoundText" text="Round: -" />
+                    <Label id="RoundTimerRoundName" text="creep_wave_1" />
+                    <Label id="RoundTimerRoundType" class="RoundType" text="" />
+                </Panel>
+                <Label id="RoundTimerCountDownText" text="1:20" />
+            </Panel>
+        </Panel>
+    </Panel>
+</root>

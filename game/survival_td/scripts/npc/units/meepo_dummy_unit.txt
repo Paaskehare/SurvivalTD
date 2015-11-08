@@ -1,0 +1,25 @@
+"meepo_dummy_unit"
+{
+	"BaseClass" 						"npc_dota_creature"
+	"Model"								"models/heroes/meepo/meepo.vmdl"
+	"ModelScale"						"0.8"
+	"AttackCapabilities" 				"DOTA_UNIT_CAP_NO_ATTACK"
+	"VisionDaytimeRange"				"0"
+	"VisionNighttimeRange"				"0"
+	"UnitRelationshipClass" 			"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_WARD"
+	"MovementCapabilities" 				"DOTA_UNIT_CAP_MOVE_NONE"
+	"AbilityLayout" 					"4"
+	"Ability1"							"dummy_passive"
+	"UnitLabel"							"Dummy"
+    "Creature"
+	{
+		"AttachWearables"
+		{
+			"Wearable1"		{	"ItemDef"		"296"		}
+			"Wearable2"		{	"ItemDef"		"297"		}
+			"Wearable3"		{	"ItemDef"		"298"		}
+			"Wearable4"		{	"ItemDef"		"299"		}
+			"Wearable5"		{	"ItemDef"		"300"		}
+		}
+	}
+}

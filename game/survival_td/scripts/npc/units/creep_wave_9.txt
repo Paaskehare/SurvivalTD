@@ -1,0 +1,26 @@
+// Spirit Bear 
+  "creep_wave_9"
+  {
+    "BaseClass"              "npc_dota_creep_lane"
+    "Model"                  "models/items/courier/faceless_rex/faceless_rex.vmdl"
+    "ModelScale"             "5.0"
+    "SoundSet"               "Creep_Bad_Melee"
+    "BountyXP"               "0"     // Experience earn.
+    "BountyGoldMin"          "150"     // Gold earned min.
+    "BountyGoldMax"          "150"     // Gold earned max.
+    "HealthBarOffset"        "400"
+    "ConsideredHero"         "1"
+
+    "ArmorPhysical"          "0"     // Physical protection.
+    "MagicalResistance"      "0"     // Magical protection.
+
+    "BoundsHullName"         "DOTA_HULL_SIZE_SMALL"
+
+    "StatusHealth"           "41168"  // 2573 * 16
+    "StatusHealthRegen"      "0"     // Health regeneration rate.
+
+    "MovementCapabilities"   "DOTA_UNIT_CAP_MOVE_GROUND"     // Type of locomotion - ground, air
+    "MovementSpeed"          "350"   // Speed
+    "MovementTurnRate"       "1.0"   // Turning rate.
+    "FollowRange"            "0"   // Distance to keep when following
+  }

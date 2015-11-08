@@ -1,0 +1,25 @@
+<root>
+    <styles>
+ 		<include src="file://{resources}/styles/dotastyles.css" />
+		<include src="file://{resources}/styles/custom_game/custom_shared_scoreboard_styles.css" />
+        <include src="file://{resources}/styles/custom_game/custom_flyout_scoreboard.css" />
+    </styles>
+	<Panel hittest="false" class="FlyoutTeam">
+		<Panel class="FlyoutTeamData">
+			<Panel class="TeamInfo ScoreCol_TeamInfo">
+				<Panel id="TeamColor_GradentFromTransparentLeft" />
+				<Panel id="TeamLogo" />
+			</Panel>
+			<Panel id="PlayersContainer" />
+			<Panel id="DeathsContainer" class="ScoreCol_Deaths ScoreboardPanel">
+				<Label id="Lives" text="999" />
+			</Panel>
+			<Panel id="RoundContainer" class="ScoreCol_Round ScoreboardPanel">
+				<Label id="Round" text="0" />
+			</Panel>
+			<Panel id="DifficultyContainer" class="ScoreCol_Difficulty ScoreboardPanel">
+				<Label id="Difficulty" text="#custom_game_difficulty_easy" />
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

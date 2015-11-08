@@ -1,0 +1,36 @@
+"trojan_horse_servants"
+{
+    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "BaseClass"                     "ability_datadriven"
+    "AbilityTextureName"            "meepo_divided_we_stand"
+    "Modifiers"
+    {   
+        "modifier_horse_visual"
+        {
+            "IsHidden"          "1"
+            "Passive"           "1"
+            "OnCreated"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"            "abilities/trojan_horse.lua"
+                    "Function"              "HorseVisualInit"
+                }
+            }
+        }
+        
+        "modifier_meepo_visual"
+        {
+            "IsHidden"          "1"
+            "ThinkInterval"     "1/30"
+            "OnIntervalThink"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"            "abilities/trojan_horse.lua"                
+                    "Function"              "HorseVisualFollow"
+                }
+            }
+        }
+    }
+}
